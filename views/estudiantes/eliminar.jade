@@ -1,0 +1,22 @@
+extends ../layout
+
+block content
+    h1 Eliminar Estudiante
+    nav
+        ul
+            li
+                a(href="/estudiante/nuevo") Registrar Estudiante
+            li 
+                a(href="/estudiante/buscar") Buscar Estudiante
+            li
+                a(href="/estudiante/eliminar") Eliminar Estudiante
+            li
+                a(href="/estudiante/actualizar") Actualizar Estudiante
+
+    input#txtNombre(type="text", name="nomElim", placeholder="Escriba el nombre del alumno")
+    input#txtApelPat(type="text", name="apePatElim", placeholder="Escriba el Apellido Paterno del alumno")
+    input#txtApelMat(type="text", name="apeMatElim", , placeholder="Escriba el Apellido Paterno del alumno") 
+    button(id="btnEliminar") Eliminar
+    br
+    br
+    button(id="btnEliminar7") Eliminar promedio 7

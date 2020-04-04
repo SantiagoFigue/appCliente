@@ -1,0 +1,131 @@
+extends ../layout
+
+block content
+    h1 Agregar Estudiante
+    nav
+        ul
+            li
+                a(href="/estudiante/agregar") Registrar Estudiante
+            li 
+                a(href="/estudiante/buscar") Buscar Estudiante
+            li
+                a(href="/estudiante/eliminar") Eliminar Estudiante
+            li
+                a(href="/estudiante/actualizar") Actualizar Estudiante
+
+    label Nombre
+    br
+    input#txtNombre(type="text", name="nombre", placeholder="Escriba su nombre")
+    br
+    br
+    label Apellido Paterno
+    br
+    input#txtape_Paterno(type="text", name="apePaterno", placeholder="Escriba su apellido paterno")
+    br
+    br
+    label Apellido Materno
+    br
+    input#txtape_Materno(type="text", name="apeMaterno", placeholder="Escriba su apellido materno")
+    br
+    br
+    label Sexo
+    br
+    input#txtSexo(type="text", name="sexo", placeholder="Ingrese su sexo")
+    br
+    br
+    label Calle
+    br
+    input#txtCalle(type="text", name="calle", placeholder="Ingresa la calle")
+    br
+    br
+    label Numero
+    br
+    input#txtNumero(type="text", name="numero", placeholder="Escriba el numero")
+    br
+    br
+    label Municipio
+    br
+    input#txtMunicipio(type="text", name="municipo", placeholder="Escriba su municipio")
+    br
+    br
+    label Colonia
+    br
+    input#txtColonia(type="text", name="colonia", placeholder="Escriba su Colonia")
+    br
+    br
+    label Estado
+    br
+    input#txtEstado(type="text", name="estado", placeholder="Escriba su estado")
+    br
+    br
+    label Pais
+    br
+    input#txtPais(type="text", name="pais", placeholder="Escriba su pais de origen")
+    br
+    br
+    label CP
+    br
+    input#txtCP(type="text", name="cp", placeholder="Escriba su codigo postal")
+    br
+    br
+    label Email 
+    br
+    input#txtEmail(type="email", name="correo", placeholder="Escriba su correo")
+    br
+    br
+    label Telefono
+    br
+    input#txtTelefono(type="text", name="telefono", placeholder="Escriba su telefono")
+    br
+    br
+    label Celular
+    br
+    input#txtCelular(type="text", name="celular", placeholder="Escriba su numero")
+    br
+    br
+    label CRUP 
+    br
+    input(type="text", name="curp", id="curp" ,placeholder="Escriba su CURP")
+    br
+    br
+    label Fecha de Nacimiento
+    br
+    input(type="text", name="fechaNac", id="fechaNac" ,placeholder="Escriba su Fecha de Nacimiento")
+    br
+    br
+    label Esatus
+    br
+    input(type="text", name="estatus", id="estatus", placeholder="Escriba el estatus")
+    br
+    br
+    label Estado Civil
+    br
+    input(type="text", name="estadoCiv", id="estadoCiv", placeholder="Escriba el Estado Civil")
+    br
+    br
+    label Tipo de Sangre
+    br
+    input#txtTipSang(type="text", name="tipoSan", placeholder = "Escriba su tipo de sangre")
+    br
+    br
+    label NSS
+    br
+    input#txtNSS(type="text", name="nss", placeholder="Escriba su NSS")
+    br
+    br
+    label Alergias
+    br
+    input#txtAler(type="text", name="alergias", placeholder="Escriba sus alergias")
+    br
+    br
+    label Datos Academicos
+    br
+    input(type="text", name="datAca", id="datAca", placeholder="Escriba los datos academicos")
+    br
+    br
+    label Datos del Tutos
+    br
+    input(type="text", name="datTut", id="datTut", placeholder="Escriba los datos del tutos")
+    br
+    br
+    button(id="btnAgregar") Agregar

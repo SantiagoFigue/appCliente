@@ -1,0 +1,68 @@
+extends ../layout
+
+block content
+    h1 Actualizar Estudiante
+    nav
+        ul
+            li
+                a(href="/estudiante/nuevo") Registrar Estudiante
+            li 
+                a(href="/estudiante/buscar") Buscar Estudiante
+            li
+                a(href="/estudiante/eliminar") Eliminar Estudiante
+            li
+                a(href="/estudiante/actualizar") Actualizar Estudiante
+
+    label ID Estudiante 
+    input(type="text", name="curp", id="txtIdEstudiante" ,placeholder="Escriba el ID del estudiante a cambiar")
+    br
+    br
+    label Calle
+    input(type="text", name="fechaNac", id="txtCalle" ,placeholder="Escriba la nueva calle")
+    br
+    br
+    label Numero
+    input(type="text", name="estatus", id="txtNumero", placeholder="Escriba el nuevo numero")
+    br
+    br
+    label Municipio
+    input(type="text", name="estadoCiv", id="txtMunicipio", placeholder="Escriba el nuevo Municipio")
+    br
+    br
+    label Colonia
+    input(type="text", name="datMedi", id="txtColonia", placeholder="Escriba la nueva Colonia")
+    br
+    br
+    label Estado
+    input(type="text", name="datAca", id="txtEstado", placeholder="Escriba el nuevo estado")
+    br
+    br
+    label Pais
+    input(type="text", name="datTut", id="txtPais", placeholder="Escriba el nuevo Pais")
+    br
+    br
+    label CP
+    input(type="text", name="datPer", id="txtCP", placeholder="Escriba el nuevo CP")
+    br
+    br
+    button(id="btnActualizar" ) Actualizar
+
+    br
+    br
+    button(id="btnMostrarDir") Mostrar Direccion
+
+    table(border ="1")
+            thead
+                td ID Estudiante
+                td Apellido Paterno
+                td Apellido Materno
+                td Nombre
+                td ID Direecion
+                td Calle
+                td Numero
+                td Municipio
+                td Colonia
+                td Estado
+                td Pais
+                td CP
+            tbody(id="tabla")

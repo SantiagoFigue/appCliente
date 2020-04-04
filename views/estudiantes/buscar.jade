@@ -1,0 +1,36 @@
+extends ../layout
+
+block content
+    h1 Buscar Estudiante
+    nav
+        ul
+            li
+                a(href="/estudiante/nuevo") Registrar Estudiante
+            li 
+                a(href="/estudiante/buscar") Buscar Estudiante
+            li
+                a(href="/estudiante/eliminar") Eliminar Estudiante
+            li
+                a(href="/estudiante/actualizar") Actualizar Estudiante
+    div
+    p
+        input(type="text", name="datoBuscar", placeholder="Ingrese el nombre", id="datoBuscar")
+        button(id="Buscar" ) Mostrar Todos
+        button(id = "btnListarAlfabetico") Alfabeticamente
+        button(id = "btnListarMunicipio") Municipio
+        button(id = "btnListarPromedio") Promedio
+        button(id = "btnListarEscuela") Escuela de Procedencia
+        
+        table(border ="1")
+            thead
+                td ID
+                td Apellido Paterno
+                td Apellido Materno
+                td Nombre
+                td CRUP
+                td Fecha de Nacimiento
+                td Estatus
+                td Promedio
+                td Escuela Egreso
+                td Municipio
+            tbody(id="tabla")
